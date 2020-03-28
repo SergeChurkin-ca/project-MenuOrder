@@ -17,10 +17,15 @@
             <div class='flip-card-inner'>
                 <div class='flip-card-front'>
                     <h2>Soups</h2>
+
                 </div>
-                <div class="flip-card-back">    
-                    <ul id="soups">
-                    </ul>
+                <div class="flip-card-back">
+                    <br>
+                    <input name="product" value="3.65" type="checkbox" onclick="orderTotal()" /> Tom Yum Gun - $3.65
+                    <br>
+                    <input name="product" value="5.50" type="checkbox" /> Tom Kha Kai - $5.50
+                    <br>
+                    <input name="product" value="3.29" type="checkbox" /> Chicken Korma Indian Soup- $3.29
                 </div>
             </div>
         </section>
@@ -31,8 +36,12 @@
                     <h2>Salads</h2>
                 </div>
                 <div class="flip-card-back">
-                    <ul id="salads">
-                    </ul>
+                    <br>
+                    <input name="product" value="3.65" type="checkbox" /> Tom Yum Gun - $3.65
+                    <br>
+                    <input name="product" value="5.50" type="checkbox" /> Tom Kha Kai - $5.50
+                    <br>
+                    <input name="product" value="3.29" type="checkbox" /> Chicken Korma Indian Soup- $3.29
                 </div>
             </div>
         </section>
@@ -43,8 +52,12 @@
                     <h2>Sides</h2>
                 </div>
                 <div class="flip-card-back">
-                    <ul id="sides">
-                    </ul>
+                    <br>
+                    <input name="product" value="3.65" type="checkbox" /> Tom Yum Gun - $3.65
+                    <br>
+                    <input name="product" value="5.50" type="checkbox" /> Tom Kha Kai - $5.50
+                    <br>
+                    <input name="product" value="3.29" type="checkbox" /> Chicken Korma Indian Soup- $3.29
                 </div>
             </div>
         </section>
@@ -55,8 +68,12 @@
                     <h2>Mains</h2>
                 </div>
                 <div class="flip-card-back">
-                    <ul id="mains">
-                    </ul>
+                    <br>
+                    <input name="product" value="3.65" type="checkbox" /> Tom Yum Gun - $3.65
+                    <br>
+                    <input name="product" value="5.50" type="checkbox" /> Tom Kha Kai - $5.50
+                    <br>
+                    <input name="product" value="3.29" type="checkbox" /> Chicken Korma Indian Soup- $3.29
                 </div>
             </div>
         </section>
@@ -65,9 +82,13 @@
     </div>
 
     <summary class='confirmOrder'>
-        <button id='submit'>Submit order</button>
-        <button id='review'>Review order</button>
-        <h3>Total</h3>
+        <!-- <button id='submit'>Submit order</button>-->
+        <input type="button" id='reset' onClick="orderTotal (false)">Reset order
+
+        <h3 id='total'>
+
+            <input value="$0.00" readonly="readonly" type="text" name="total" />Total
+        </h3>
     </summary>
 
     <script src="js/app.js"></script>
