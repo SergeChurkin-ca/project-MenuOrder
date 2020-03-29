@@ -26,12 +26,15 @@ section {
     width: 100%;
     height: 100%;
     transition: transform 0.7s;
+    -webkit-transition: transform 0.7s;
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
     box-shadow: 0.2em 0.3em 1em #444;
 }
 
 section:hover .flip-card-inner {
     transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
 }
 
 .flip-card-front,
@@ -40,6 +43,7 @@ section:hover .flip-card-inner {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     background-color: lawngreen;
     text-align: center;
 }
@@ -50,6 +54,7 @@ section:hover .flip-card-inner {
 
 .flip-card-back {
     transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
     text-align: left;
     line-height: 4;
 }
@@ -65,7 +70,7 @@ ul {
     margin: auto;
 }
 
-button {
+#reset {
     width: 35em;
     height: 3em;
     margin: 1em 5em 0 10em;
@@ -76,4 +81,5 @@ h3 {
     width: 10em;
     height: 3em;
     background-color: coral;
+    padding: 0 1em 2em;
 }

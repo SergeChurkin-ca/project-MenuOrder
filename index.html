@@ -23,9 +23,9 @@
                     <br>
                     <input name="product" value="3.65" type="checkbox" onclick="orderTotal()" /> Tom Yum Gun - $3.65
                     <br>
-                    <input name="product" value="5.50" type="checkbox" /> Tom Kha Kai - $5.50
+                    <input name="product" value="5.50" type="checkbox" onclick="orderTotal()" /> Tom Kha Kai - $5.50
                     <br>
-                    <input name="product" value="3.29" type="checkbox" /> Chicken Korma Indian Soup- $3.29
+                    <input name="product" value="3.29" type="checkbox" onclick="orderTotal()" /> Chicken Korma Indian Soup- $3.29
                 </div>
             </div>
         </section>
@@ -37,11 +37,11 @@
                 </div>
                 <div class="flip-card-back">
                     <br>
-                    <input name="product" value="3.65" type="checkbox" /> Tom Yum Gun - $3.65
+                    <input name="product" value="3.65" type="checkbox" onclick="orderTotal()" /> Tom Yum Gun - $3.65
                     <br>
-                    <input name="product" value="5.50" type="checkbox" /> Tom Kha Kai - $5.50
+                    <input name="product" value="5.50" type="checkbox" onclick="orderTotal()" /> Tom Kha Kai - $5.50
                     <br>
-                    <input name="product" value="3.29" type="checkbox" /> Chicken Korma Indian Soup- $3.29
+                    <input name="product" value="3.29" type="checkbox" onclick="orderTotal()" /> Chicken Korma Indian Soup- $3.29
                 </div>
             </div>
         </section>
@@ -53,11 +53,11 @@
                 </div>
                 <div class="flip-card-back">
                     <br>
-                    <input name="product" value="3.65" type="checkbox" /> Tom Yum Gun - $3.65
+                    <input name="product" value="3.65" type="checkbox" onclick="orderTotal()" /> Tom Yum Gun - $3.65
                     <br>
-                    <input name="product" value="5.50" type="checkbox" /> Tom Kha Kai - $5.50
+                    <input name="product" value="5.50" type="checkbox" onclick="orderTotal()" /> Tom Kha Kai - $5.50
                     <br>
-                    <input name="product" value="3.29" type="checkbox" /> Chicken Korma Indian Soup- $3.29
+                    <input name="product" value="3.29" type="checkbox" onclick="orderTotal()" /> Chicken Korma Indian Soup- $3.29
                 </div>
             </div>
         </section>
@@ -69,11 +69,11 @@
                 </div>
                 <div class="flip-card-back">
                     <br>
-                    <input name="product" value="3.65" type="checkbox" /> Tom Yum Gun - $3.65
+                    <input name="product" value="3.65" type="checkbox" onclick="orderTotal()" /> Tom Yum Gun - $3.65
                     <br>
-                    <input name="product" value="5.50" type="checkbox" /> Tom Kha Kai - $5.50
+                    <input name="product" value="5.50" type="checkbox" onclick="orderTotal()" /> Tom Kha Kai - $5.50
                     <br>
-                    <input name="product" value="3.29" type="checkbox" /> Chicken Korma Indian Soup- $3.29
+                    <input name="product" value="3.29" type="checkbox" onclick="orderTotal()" /> Chicken Korma Indian Soup- $3.29
                 </div>
             </div>
         </section>
@@ -83,12 +83,17 @@
 
     <summary class='confirmOrder'>
         <!-- <button id='submit'>Submit order</button>-->
-        <input type="button" id='reset' onClick="orderTotal (false)">Reset order
+        <!-- <input type="button" id='udapte' onClick="orderTotal(false)" value="Update Total">-->
 
         <h3 id='total'>
+            <p>Total</p>
 
-            <input value="$0.00" readonly="readonly" type="text" name="total" />Total
+            <input value="$0.00" readonly="readonly" type="text" name="total" />
+
         </h3>
+
+        <button type="button" id='reset' onClick="orderTotal(false)" value="Reset Order">Reset</button>
+
     </summary>
 
     <script src="js/app.js"></script>
