@@ -21,6 +21,7 @@ section {
     perspective: 100em;
 }
 
+
 .flip-card-inner {
     position: relative;
     width: 100%;
@@ -32,10 +33,13 @@ section {
     box-shadow: 0.2em 0.3em 1em #444;
 }
 
+
 section:hover .flip-card-inner {
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
 }
+
+
 
 .flip-card-front,
 .flip-card-back {
@@ -48,9 +52,12 @@ section:hover .flip-card-inner {
     text-align: center;
 }
 
+
+
 .flip-card-front {
     text-align: center;
 }
+
 
 .flip-card-back {
     transform: rotateY(180deg);
@@ -71,7 +78,6 @@ ul {
     justify-content: center;
 }
 
-
 button {
     width: 35em;
     height: 5em;
@@ -84,14 +90,16 @@ button {
     display: flex;
 }
 
-#delivery, #nodelivery {
-width: 25%;
+#delivery,
+#nodelivery {
+    width: 25%;
 }
-.delivery *{
-display: inline-flex;
-margin: 0.5em 5em 0 5em;
-  
+
+.delivery * {
+    display: inline-flex;
+    margin: 0.5em 5em 0 5em;
 }
+
 #total {
     border: solid 0.11em grey;
     width: 15em;
