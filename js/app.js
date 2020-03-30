@@ -1,8 +1,6 @@
-//const flipCardBack = document.querySelector('.flip-card-back');
-
-
-
 const flipCardFront = document.querySelector('.flip-card-inner');
+const section = document.getElementsByTagName('section');
+
 const resetButton = document.getElementById('reset');
 const deliveryButton = document.getElementById('delivery');
 
@@ -18,16 +16,15 @@ function orderTotal() {
     var total = 0;
     for (var i = 0; i < input.length; i++) {
         if (input[i].checked) {
-            //  input[i].checked = true;
+            input[i].checked = true;
             total += parseFloat(input[i].value);
-            // var x = input[i].parentNode;
 
         }
-        this.parentElement.style = 'transform: none';
-        this.parentElement.style = 'transform: none';
+        this.parentElement.style = 'transform: none; transition: none';
+        this.parentElement.parentElement.style = 'transform: none; transition: none'
     }
     document.getElementsByName("total")[0].value = "$" + total.toFixed(2);
-    document.getElementsByName("taxes")[0].value = "$" + total.toFixed(0) * 0.13;
+    document.getElementsByName("taxes")[0].value = "$" + total.toFixed() * 0.13;
     document.getElementsByName("grandtotal")[0].value = "$" + total * 1.13;
 
 }
