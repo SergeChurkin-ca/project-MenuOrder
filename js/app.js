@@ -3,7 +3,7 @@ const flipCardFront = document.querySelector('.flip-card-inner');
 const resetButton = document.getElementById('reset');
 const deliveryButton = document.getElementById('delivery');
 
-
+const checkBoxes = document.querySelectorAll('input[type="checkbox"]')
 
 // check is checkbox is checked and totals
 function orderTotal() {
@@ -27,12 +27,20 @@ function orderTotal() {
 
     document.getElementsByName("total")[0].value = "$" + total.toFixed(2);
     document.getElementsByName("taxes")[0].value = "$" + total.toFixed() * 0.13;
-    document.getElementsByName("grandtotal")[0].value = "$" + total * 1.13;
-
-
+    document.getElementsByName("grandtotal")[0].value = "$" + total.toFixed() * 1.13;
 }
 
-// button has to be fixed : uncheck checkboxes and update total - this is temporary fix
+checkBoxes.forEach(function(check) {
+    check.addEventListener('change', orderTotal)
+});
+
+// reset button resets position and total
 resetButton.addEventListener('click', () => {
-    window.location.reload();
+    checkBoxes.forEach(function(check) {
+        check.checked = false;
+        document.getElementsByName("total")[0].value = "$" + '0.00';
+        document.getElementsByName("taxes")[0].value = "$" + '0.00';
+        document.getElementsByName("grandtotal")[0].value = "$" + '0.00';
+
+    })
 })
