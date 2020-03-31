@@ -122,12 +122,18 @@
             <input value="$0.00" readonly="readonly" type="text" name="grandtotal" />
 
 
-            <!-- <div class='buttons-section'> -->
 
             <button type="button" id='reset' onClick="orderTotal(false)" value="Reset Order">Reset Order</button>
 
-            <button type="button" id='confirm' value="Confirmed Order" value="Confirm Order">Confirm Order</button>
-            <!-- </div>-->
+            <button type="button" id='confirm' value="Confirm Order">Confirm Order</button>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Thank you! Chief starts cooking! :)</p>
+                </div>
+            </div>
+
+
         </div>
 
 
