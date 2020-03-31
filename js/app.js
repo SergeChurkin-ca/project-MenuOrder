@@ -47,15 +47,38 @@ resetButton.addEventListener('click', () => {
 
 //delivery option Button
 
-function deliveryOption() {
-    deliveryButton.addEventListener('click', () => {
-        document.getElementsByName("delivery")[0].value = '$' + '5.00';
 
-    });
-    nodeliveryButton.addEventListener('click', () => {
-        document.getElementsByName("delivery")[0].value = '$' + '0.00';
-    });
+
+
+// Modal
+var modal = document.getElementById("Mymodal");
+
+var confirmButton = document.getElementById("confirm");
+var span = document.getElementsByClassName("close")[0];
+
+confirmButton.onclick = function() {
+    modal.style.display = "block";
+
 }
-let deliveryFee = deliveryOption;
-deliveryOption();
-console.log(deliveryFee)
+span.onclick = function() {
+    modal.style.display = "none"
+}
+
+window.onclick = function(e) {
+    if (e.target == modal) {
+        modal.style.display = 'none';
+
+    }
+}
+
+resetButton.addEventListener('click', () => {
+    checkBoxes.forEach(function(check) {
+
+        check.checked = false;
+
+        document.getElementsByName("total")[0].value = "$" + '0.00';
+        document.getElementsByName("taxes")[0].value = "$" + '0.00';
+        document.getElementsByName("grandtotal")[0].value = "$" + '0.00';
+    })
+    window.location.reload()
+})

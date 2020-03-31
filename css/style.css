@@ -1,6 +1,13 @@
 header {
     font-size: 3em;
     text-align: center;
+    background: red;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    left: 0;
+    vertical-align: middle;
 }
 
 .orderMenu {
@@ -104,4 +111,31 @@ button {
     color: white;
     margin: 1.5em 0 0.3em -1.5em;
     
+}
+
+/* Modal */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1; 
+    padding-top: 10vh;
+  left: 0;
+  top: 15em;
+  width: 70%; 
+  height: 10em;
+  overflow: auto; 
+    background-color: aqua;
+    margin: 0 15% 0;
+    vertical-align: middle;
+    border: solid 0.1em grey;
+    border-radius: 1em;
+}
+.modal-content {
+ text-align: center;
+
+}
+span {
+    color: red;
+    margin: 1em 27em;
 }
