@@ -1,0 +1,41 @@
+body {
+    background-image: linear-gradient(to right, black 10%, grey 100%, green 55%), url('/images/twochefs.jpg');
+    background-blend-mode: color-burn;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+        width: 100%;
+    background-blend-mode: screen;
+}
+
+.flip-card-front {
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-shadow: 0.1em 0.1em 0.1em black;
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.flip-card-back {
+    background-color: antiquewhite;
+}
+
+.starters .flip-card-front {
+       background-image: url('/images/spring-rolls-2097978_1920.jpg');
+}
+
+.salads .flip-card-front {
+       background-image: url('/images/somtaam.jpg');
+}
+.soups .flip-card-front {
+       background-image: url('/images/soup.jpg');
+}
+.riceAndNoodles .flip-card-front {
+       background-image: url('/images/padthai.jpg');
+}
+.mains .flip-card-front {
+       background-image: url('/images/wongton.jpg');
+}
