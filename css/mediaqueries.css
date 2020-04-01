@@ -1,5 +1,4 @@
 @media screen and (max-width: 1000px) {
- 
     section .flip-card-inner {
         width: 60em;
         height: 35em;
@@ -8,12 +7,11 @@
     }
     .flip-card-back {
         font-size: 1.5em;
-    
     }
     .confirmOrder {
         margin-top: 7em;
     }
-    .modal{
+    .modal {
         font-size: 0.7em;
         text-align: center;
         margin: auto;
