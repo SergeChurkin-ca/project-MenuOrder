@@ -11,20 +11,9 @@ header {
     font-family: "Tamil MN", serif;
     font-size: 4rem;
     font-weight: 600;
-    line-height: 3em;
+    line-height: 2.2em;
+    text-shadow: 0.05em 0.05em 0.05em royalblue;
 }
-@media screen and (max-width: 1000px) {
-    body {
-        font-size: 0.5em
-    }
-    section .flip-card-inner {
-        width: 80em;
-        height: 65em;
-        margin: 15em 7em 5em;
-        font-size: 0.5em;
-    }
-}
-
 
 .orderMenu {
     display: flex;
@@ -68,12 +57,12 @@ section:hover .flip-card-inner {
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     text-align: center;
-   
+    border: solid 0.2em white;
+    border-radius: 0.3em;
 }
 
 .flip-card-front {
     text-align: center;
-    
 }
 
 .flip-card-back {
@@ -81,7 +70,6 @@ section:hover .flip-card-inner {
     -webkit-transform: rotateY(180deg);
     text-align: left;
     line-height: 3;
-    
 }
 
 input,
@@ -123,6 +111,7 @@ button {
     color: white;
     margin: 1.5em 0 0.3em -1.5em;
 }
+
 button:hover {
     color: black;
 }
@@ -133,6 +122,8 @@ button:active {
     box-shadow: 0.3em 0.3em 0.3em grey;
     border-color: orange;
 }
+
+
 /* Modal */
 
 .modal {
@@ -145,18 +136,17 @@ button:active {
     width: 35em;
     height: 20em;
     overflow: auto;
-    background-image: url('/images/cheff.jpg');
+    background-image: url(../images/cheff.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 10% 0 10%;
     border: solid 0.4em white;
     border-radius: 1em;
     box-shadow: -1em 1em 1em -1em white;
-   
 }
 
 .modal-content {
-   text-align: right;
+    text-align: right;
     font-size: 1.5em;
     width: 100%;
     color: white;

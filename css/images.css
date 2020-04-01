@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(to right, black 10%, grey 100%, green 55%), url(../images/twochefs.jpg);
+    background-image: linear-gradient(to right, black 30%, grey 90%, red 1%), url(../images/twochefs.jpg);
     background-blend-mode: color-burn;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -7,6 +7,11 @@ body {
     height: auto;
     width: 100%;
     background-blend-mode: screen;
+}
+
+header {
+    background-image: url(../images/ornament.jpg);
+   
 }
 
 .flip-card-front {
