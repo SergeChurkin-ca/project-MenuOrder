@@ -3,4 +3,5 @@
 ### https://sergechurkin-ca.github.io/project-MenuOrder/
 
 Flip card food menu, ordering and billing.
+(./images/Screen Shot 2020-04-22 at 1.55.29 PM.png)
 
